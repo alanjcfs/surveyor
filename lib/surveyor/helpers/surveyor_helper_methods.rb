@@ -63,7 +63,7 @@ module Surveyor
         "#{next_question_number(q) unless (q.dependent? or q.display_type == "label" or q.display_type == "image" or q.part_of_group?)}#{q.text_for(nil, context, locale)}".html_safe
       end
       def g_text(g, context=nil, locale=nil)
-        "#{next_question_number(g)}#{g.text_for(@render_context, I18n.locale)}".html_safe
+        "#{next_question_number(g)}#{g.text_for(nil,@render_context, I18n.locale)}".html_safe
       end
 
       def next_question_number(question)
