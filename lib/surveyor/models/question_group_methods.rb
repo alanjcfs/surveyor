@@ -50,6 +50,9 @@ module Surveyor
       def help_text_for(context = nil, locale = nil)
         in_context(translation(locale)[:help_text], context)
       end
+      def part_of_group?
+        true #!self.question_group.nil?
+      end
 
       def translation(locale)
         {:text => self.text, :help_text => self.help_text}.with_indifferent_access.merge(
