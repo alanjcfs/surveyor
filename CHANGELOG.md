@@ -1,7 +1,11 @@
 History for Surveyor
 ====================
 
-1.3.1
+1.4.1
+-----
+
+
+1.4.0
 -----
 ### Features
 
@@ -16,6 +20,8 @@ History for Surveyor
 - Remove default order on Response. (#423)
 - Bug fix for RedCap Parser for DependencyConditions. thanks @ariel-perez-birchbox
 - Make Surveyor::Parser accept Answer#reference_identifier via underscore or hash syntax (#439)
+- Fix show action and have it use new translation view methods (#438, #442) thanks @alanjcfs
+- Fix times showing in UTC when time zone is specified in Rails (#435)
 
 ### Dependencies
 
